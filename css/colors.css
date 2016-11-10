@@ -1,0 +1,62 @@
+/* This file sets module colors to match those on the ccis.edu website, please do not modify. */
+
+/* Official CC website colors and fonts:
+Navy: 
+RGB 23 43 84 
+#172B54
+
+Gray: 
+RGB 118 118 118  
+#767676
+
+Yellow: 
+RGB 255 216 0 
+#FFD800
+
+Teal: 
+RGB 23 155 144 
+#179B90
+
+Red: 
+RGB 233 47 50 
+#E92F32
+
+Most text and some backgrounds use Black 90% 
+(RGB 26 26 26, #1A1A1A)
+
+Fonts: 
+Museo Sans: weights 100, 500, 900
+Museo Slab: weights: 100, 500 */
+
+
+a {
+	color: #418ac9;
+}
+
+p {
+	color: #1A1A1A;
+}
+
+h1 {
+	color: #1A1A1A;
+}
+
+h2 {
+	color: #172B54;
+}
+
+h3 {
+	color: #179B90;
+}
+
+h4 {
+	color: #179B90;
+}
+
+h5 {
+	color: #E92F32;
+}
+
+.activities {
+	color: #333333;
+}

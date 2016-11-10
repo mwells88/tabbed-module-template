@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--TABBED MODULE TEMPLATE-->
+<!--LAST EDITED 09/06/2016-->
+
+<head>
+<meta charset="utf-8">
+<title>Week 7 Instructional Materials</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap CSS, FontAwesome CSS (http://fontawesome.io/icons/) tabbedmodule CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/tabbedmodule.css">
+<link rel="stylesheet" type="text/css" href="css/colors.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<!--JQuery.min.js, Bootstrap.min.js, tabbedmodule.js, slickQuiz-config.js, etc.-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/tabbedmodule.js"></script>
+<script src="js/slickQuiz-config-7.js"></script>
+<script src="js/slickQuiz.js"></script>
+</head>
+
+<body id="top">
+<br>
+<div class="container" style="padding-bottom:50px; padding-top:20px">
+
+<!--navigation tabs-->
+  <ul class="nav nav-tabs" id="mytabs">
+    <li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
+    <li><a data-toggle="tab" href="#activities">Activities</a></li>
+
+<!--begin dropdown lecture menu-->
+     <li class="dropdown">
+          <a href="#lecture" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lecture <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+<!--Delete from 'begin dropdown lecture menu' to here to convert to normal tabs. -->
+<!--Add or delete lecture links as needed.-->
+<!--Ensure final lecture's 'next' button has the id "toreview".-->
+<!--Ensure the button from review back to lecture points to the right lecture using button ids (see tabbedmodule.css for reference)-->
+            <li><a data-toggle="tab" href="#lecture1">Lecture 1</a></li>
+  			<li><a data-toggle="tab" href="#lecture2">Lecture 2</a></li>
+            <li><a data-toggle="tab" href="#lecture3">Lecture 3</a></li>
+            <li><a data-toggle="tab" href="#lecture4">Lecture 4</a></li>
+            <li><a data-toggle="tab" href="#lecture5">Lecture 5</a></li>
+            <li><a data-toggle="tab" href="#lecture6">Lecture 6</a></li>
+    	</ul></li>
+<!--end dropdown lecture menu-->        
+    <li><a data-toggle="tab" href="#review">Review</a></li>
+	</ul>
+<!--end navigation tabs-->
+
+<!--begin page content-->
+<div class="tab-content" style="margin-top:15px">
+
+<!--OVERVIEW-->
+
+<div id="overview" class="tab-pane fade in active">
+      <h1>Week Seven</h1>
+      <h2>Subheading</h2>
+      <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="overviewnext" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--ACTIVITIES-->
+
+<div id="activities" class="tab-pane fade">
+      <h2>Activities</h2>
+      <h3 class="activities"><i class="fa fa-book" aria-hidden="true"></i> Readings</h3>
+      <ul>
+      <li>Chapter 1</li>
+      <li>Module 1</li>
+      <li>Review Instructional Materials</li>
+      </ul>
+      <h3 class="activities"><i class="fa fa-check-square-o" aria-hidden="true"></i> Required Activities</h3>
+      <ul>
+      <li>Discussion 1</li>
+      <li>Discussion 2</li>
+      <li>Paper/Activity 1</li>
+      <li>Quiz 1</li>
+      </ul>
+      <p>&nbsp;</p>
+      <div class="alert alert-info fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <p class="text-center">If you have questions regarding any of these activities, make sure to post those questions in the <strong>Open Forum</strong>.</p>
+	 </div>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="activitiesprev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="activitiesnext" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE SECTION-->
+
+<!--LECTURE 1-->
+<div id="lecture1" class="tab-pane fade">
+      <h2>Lecture 1</h2>
+      <h3>Subheading [optional]</h3>
+      <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture1prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="lecture1next" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE 2-->    
+<div id="lecture2" class="tab-pane fade">
+      <h2>Lecture 2</h2>
+      <h3>Subheading [optional]</h3>
+      <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture2prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="lecture2next" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE 3-->
+<div id="lecture3" class="tab-pane fade">
+    <h2>Lecture 3</h2>
+    <h3>Subheading [optional]</h3>
+	<p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture3prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="lecture3next" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE 4-->
+<div id="lecture4" class="tab-pane fade">
+      <h2>Lecture 4</h2>
+      <h3>Subheading [optional]</h3>
+      <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture4prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="lecture4next" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE 5-->
+<div id="lecture5" class="tab-pane fade">
+      <h2>Lecture 5</h2>
+      <h3>Subheading [optional]</h3>
+	  <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture5prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<button type="button" id="lecture5next" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--LECTURE 6-->
+<div id="lecture6" class="tab-pane fade">
+      <h2>Lecture 6</h2>
+      <h3>Subheading [optional]</h3>
+      <p>Lorem ipsum dolor sit amet, ea luptatum assueverit pri, ex mollis epicuri accusata est. Eos tamquam delenit albucius ad, semper copiosae evertitur mei ad, ad vel harum efficiendi. Mea id nullam sanctus. Pri duis ferri ne. Harum tollit est et, simul ubique laboramus ne vel, iudico apeirian aliquando est et.</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<button type="button" id="lecture6prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<!--"TOREVIEW" BUTTON-->
+<button type="button" id="toreview" class="btn btn-primary pull-right" onclick="location.href='#mytabs'">Review <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<div style="clear:both"></div>
+</div>
+
+<!--REVIEW-->
+<!--IMPORTANT: questions and answers can be edited in the file "js/slickQuiz-config-1.js"-->
+
+<div id="review" class="tab-pane fade">
+      <div id="slickQuiz">
+      <h2 class="quizName">Review</h2>
+		<div class="quizArea panel panel-warning">
+            <div class="quizHeader panel-heading">
+                <!-- where the quiz main copy goes -->
+            </div>
+            <div class="panel-body">
+            <a class="btn btn-primary startQuiz" style="margin-left:auto; margin-right:auto; display:block;" href="#">Get Started!</a>
+            <!-- where the quiz gets built -->
+            </div>
+        </div>
+        <div class="quizResults well">
+            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+            <div class="quizResultsCopy">
+                <!-- where the quiz result copy goes -->
+            </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+<!--next/previous buttons-->
+<div style="clear:both"></div>
+<!--ENSURE THIS BUTTON LINKS TO YOUR FINAL LECTURE PAGE-->
+<button type="button" id="lecture7prev" class="btn btn-primary pull-left" onclick="location.href='#mytabs'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+<div style="clear:both"></div>
+</div>  
+</div>
+
+<!--footer-->
+<div class="panel-footer navbar-fixed-bottom center-block text-center" style="width:100%; clear:both; background-color:#fafafa;">Course ###: Course Title</div>
+</div>
+
+</body>
+</html>
